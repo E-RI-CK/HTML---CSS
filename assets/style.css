@@ -1,0 +1,15 @@
+h2{
+    color: coral;
+}
+body{
+    font-family: sans-serif;
+}
+
+img,video,iframe{
+    max-width: 100%;
+    height: auto;
+}
+.h{
+    max-width: 100%;
+    height: auto;
+}
