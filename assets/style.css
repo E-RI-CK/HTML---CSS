@@ -1,15 +1,20 @@
-h2{
-    color: coral;
+h2 {
+  color: coral;
 }
-body{
-    font-family: sans-serif;
+body {
+  font-family: sans-serif;
 }
 
-img,video,iframe{
-    max-width: 100%;
-    height: auto;
+img,
+video {
+  height: auto;
+  width: 50%;
 }
-.h{
-    max-width: 100%;
-    height: auto;
+.h {
+  max-width: 100%;
+  height: auto;
+}
+iframe {
+  width: 50%;
+  height: 400px;
 }
