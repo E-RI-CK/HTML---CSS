@@ -516,9 +516,9 @@
   <br>
   <input type="hidden" name="idioma" placeholder="idioma" value="es">
   <br>
-  <input type="email">
+  <input type="email" style="background:green">
   <br>
-  <input type="number">
+  <input type="number" max="8" min="3">
   <br>
   <input type="tel">
   <br>
@@ -550,7 +550,7 @@
   <br>
   <h3>Ejemplo de Formularios</h3>
   <h4>Formulario de Login</h4>
-  <form action="https://jonmircha.com/" method="POST" autocomplete="off">
+  <form action="https://jonmircha.com/" method="POST" autocomplete="on">
     <label for="usuario">Usuario: </label>
     <input type="text" name="usuario" id="usuario" placeholder="Escribe tu usuario" pattern="^[A-Za-z]+$"
       title="El campo sólo acepta letras" required>
@@ -666,6 +666,10 @@
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   <script>
     console.log("Hola estamos aprendiendo HTML");
+  </script>
+  <script>
+    let $inputValue = document.querySelector("#usuario");
+    console.log($inputValue);
   </script>
   <script src="assets/codigos.js"></script>
 </body>
