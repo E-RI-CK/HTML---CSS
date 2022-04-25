@@ -8,6 +8,9 @@
   <title>Learning HTML</title>
   <meta name="description" content="HTML fundaments" />
   <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="/imgs/icon.png">
+  <link rel="apple-touch-icon" href="/imgs/icon.png">
+  <metha name="theme-color" content="#FF6600"></metha>
 </head>
 
 <body>
@@ -553,7 +556,7 @@
   <form action="https://jonmircha.com/" method="POST" autocomplete="on">
     <label for="usuario">Usuario: </label>
     <input type="text" name="usuario" id="usuario" placeholder="Escribe tu usuario" pattern="^[A-Za-z]+$"
-      title="El campo sólo acepta letras" required>
+      title="El campo sólo acepta letras" required value="holi">
     <br>
     <!-- <input type="text" name="email" autocomplete="off"> -->
     <label for="password">Password: </label>
@@ -566,7 +569,7 @@
   <h4>Selects, Radios y Checkbox</h4>
   <form>
     <p>Elige tu idioma:</p>
-    <select name="idioma" required>
+    <select name="idioma" required size="4">
       <option value="" selected>Elige una opción</option>
       <option value="es">Español</option>
       <option value="en">Inglés</option>
@@ -575,7 +578,7 @@
       <option value="pt">Portugués</option>
     </select>
     <p>Elige tu lenguaje de programación favorito:</p>
-    <input type="radio" name="lenguaje" id="radio-js" value="js" required>
+    <input type="radio" name="lenguaje" id="radio-js" value="js"required>
     <label for="radio-js">JavaScript</label>
     <input type="radio" name="lenguaje" id="radio-py" value="py" checked>
     <label for="radio-py">Python</label>
@@ -583,23 +586,23 @@
     <label for="radio-php">PHP</label>
     <p>Elige tus intereses:</p>
     <label>
-      <input type="checkbox" name="intereses" value="deportes">
+      <input type="checkbox" name="intereses-deportes" value="deportes">
       Deportes
     </label>
     <label>
-      <input type="checkbox" name="intereses" value="finanzas" checked>
+      <input type="checkbox" name="intereses-finanzas" value="finanzas" checked>
       Finanzas
     </label>
     <label>
-      <input type="checkbox" name="intereses" value="salud">
+      <input type="checkbox" name="intereses-salud" value="salud">
       Salud
     </label>
     <label>
-      <input type="checkbox" name="intereses" value="politica">
+      <input type="checkbox" name="intereses-politica" value="politica">
       Política
     </label>
     <label>
-      <input type="checkbox" name="intereses" value="ecologia" checked>
+      <input type="checkbox" name="intereses-ecologia" value="ecologia" checked>
       Ecología
     </label>
     <p>
@@ -613,7 +616,7 @@
   </form>
   <h4>Formulario de Contacto</h4>
   <!-- https://formsubmit.co/ -->
-  <form action="https://formsubmit.co/your@email.com" method="POST">
+  <form action="https://formsubmit.co/avalerom@uni.pe" method="POST">
     <input type="text" name="nombre" placeholder="Escribe tu nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
       title="Nombre sólo acepta letras y espacios en blanco" required>
     <br>
@@ -668,9 +671,15 @@
     console.log("Hola estamos aprendiendo HTML");
   </script>
   <script>
-    let $inputValue = document.querySelector("#usuario");
-    console.log($inputValue);
+    setTimeout(() => {
+      console.clear();
+      let $inputValue = document.querySelector("#usuario");
+      console.log($inputValue.value);
+    }, 500);
+   
+
   </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="assets/codigos.js"></script>
 </body>
 
